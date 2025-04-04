@@ -25,9 +25,13 @@ export default function Home() {
   
 
       <main className="p-8">
-      <section className="mb-12 flex flex-col items-center justify-center py-12 bg-white">
-  <div className="container mx-auto px-6 text-center md:text-left md:flex md:items-center md:justify-between">
-    <div className="md:w-1/2">
+     
+      <section className="py-8 md:py-12 bg-white">
+  <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        {/* Text Content */}
+        <div className="w-full md:w-1/2 order-2 md:order-1">
+
       <h2 className="text-3xl font-semibold text-shujaa  hover:text-shujaa-dark transition duration-300 mb-6">About Us</h2>
       <p className="text-lg text-gray-700 leading-relaxed">
         FutureShujaa is an innovative e-learning platform designed to deliver tech skills
@@ -36,57 +40,76 @@ export default function Home() {
         and social advancement.
       </p>
     </div>
-    {/* Right: Image */}
-    <div className="mt-8 md:mt-0 md:w-1/2">
-      <img
-        src="/kenya.jpeg"  
-        alt="Kenya"
-        className="w-full h-auto object-cover rounded-lg"
-      />
+ 
+
+
+     {/* Image */}
+     <div className="w-full md:w-1/2 order-1 md:order-2">
+        <img
+          src="/kenya.jpeg"
+          alt="Kenya"
+          className="w-full h-auto object-cover rounded-lg shadow-lg"
+        />
+      </div>
     </div>
   </div>
 </section>
 
-<section className="mb-12 flex flex-col items-center justify-center py-12 bg-white">
-  <div className="container mx-auto px-6 text-center md:text-left md:flex md:items-center md:justify-between">
-    {/* Left: Image */}
-    <div className="md:w-1/2">
-      <img
-        src="/robot.jpeg"  
-        alt="Robot"
-        className="w-full h-auto object-cover rounded-lg"
-      />
-    </div>
-    <div className="mt-8 ml-6 md:mt-0 md:w-1/2">
-      <h2 className="text-3xl font-semibold text-shujaa  hover:text-shujaa-dark transition duration-300 mb-6">Our Vision</h2>
-      <p className="text-lg text-gray-700 leading-relaxed">
-        To create an equitable society by enabling access to quality digital education and
-        reducing youth unemployment through scalable, interactive e-learning solutions.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section className="mb-12 flex flex-col items-center justify-center py-12 bg-white">
-  <div className="container mx-auto px-6 text-center md:text-left md:flex md:items-center md:justify-between">
-    <div className="md:w-1/2">
-      <h2 className="text-3xl font-semibold text-shujaa  hover:text-shujaa-dark transition duration-300 mb-6">Our Objectives</h2>
-      <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
-        <li>Empower students in informal settlements with market-relevant digital skills.</li>
-        <li>Bridge the gap caused by teacher shortages and outdated educational resources.</li>
-      </ul>
-    </div>
-    {/* Right: Image */}
-    <div className="mt-8 md:mt-0 md:w-1/2">
-      <img
-        src="/lion.jpeg" 
-        alt="Lion"
-        className="w-full h-auto object-cover rounded-lg"
-      />
+<section className="py-8 md:py-12 bg-white">
+  <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      {/* Image - Mobile first */}
+      <div className="w-full md:w-1/2 order-1">
+        <img
+          src="/robot.jpeg"
+          alt="Robot"
+          className="w-full h-auto object-cover rounded-lg shadow-lg"
+        />
+      </div>
+      
+      {/* Text Content */}
+      <div className="w-full md:w-1/2 order-2 md:order-2">
+        <h2 className="text-xl md:text-3xl font-semibold text-shujaa mb-4 md:mb-6">
+          Our Vision
+        </h2>
+        <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-3xl">
+          To create an equitable society by enabling access to quality digital education and
+          reducing youth unemployment through scalable, interactive e-learning solutions.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
+<section className="py-8 md:py-12 bg-white">
+  <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      {/* Text Content */}
+      <div className="w-full md:w-1/2 order-2 md:order-1">
+        <h2 className="text-xl md:text-3xl font-semibold text-shujaa mb-4 md:mb-6">
+          Our Objectives
+        </h2>
+        <ul className="space-y-3 md:space-y-4 text-base md:text-lg text-gray-700 pl-4 md:pl-6">
+          <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-shujaa before:rounded-full">
+            Empower students in informal settlements with market-relevant digital skills.
+          </li>
+          <li className="relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-shujaa before:rounded-full">
+            Bridge the gap caused by teacher shortages and outdated educational resources.
+          </li>
+        </ul>
+      </div>
+
+      {/* Image */}
+      <div className="w-full md:w-1/2 order-1 md:order-2">
+        <img
+          src="/lion.jpeg"
+          alt="Lion"
+          className="w-full h-auto object-cover rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
     <TestimonialsSection />
     <ContactForm />

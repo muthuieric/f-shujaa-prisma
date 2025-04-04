@@ -136,7 +136,7 @@ const EditCourseForm = ({
                 </FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Ex: Web Development for Beginners"
+                    placeholder="Ex: Mastering AI Basics"
                     {...field}
                   />
                 </FormControl>
@@ -153,7 +153,7 @@ const EditCourseForm = ({
                 <FormLabel>Subtitle</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Ex: Become a Full-stack Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB and more!"
+                    placeholder="Ex: A Beginner’s Guide to Understanding Artificial Intelligence"
                     {...field}
                   />
                 </FormControl>
@@ -172,7 +172,7 @@ const EditCourseForm = ({
                 </FormLabel>
                 <FormControl>
                   <RichEditor
-                    placeholder="What is this course about?"
+                    placeholder="What is the content of this course?"
                     {...field}
                   />
                 </FormControl>
@@ -260,7 +260,7 @@ const EditCourseForm = ({
             )}
           />
 
-          <FormField
+          {/* <FormField
             control={form.control}
             name="price"
             render={({ field }) => (
@@ -272,14 +272,14 @@ const EditCourseForm = ({
                   <Input
                     type="number"
                     step="0.01"
-                    placeholder="29.99"
+                    placeholder="22.00"
                     {...field}
                   />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
-          />
+          /> */}
 
           <div className="flex gap-5">
             <Link href="/instructor/courses">

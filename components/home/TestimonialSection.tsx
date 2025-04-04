@@ -8,17 +8,17 @@ const TestimonialsSection: React.FC = () => (
       <h2 className="text-3xl font-bold text-gray-800 mb-8">What Our Users Say</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <Testimonial
-          name="John Doe"
+          name="John Kimani"
           imageSrc="./st1.jpeg"
           quote="This platform has transformed the way I learn new skills. Highly recommend!"
         />
         <Testimonial
-          name="Jane Smith"
+          name="Jane Ndunge "
           imageSrc="./st2.jpeg"
           quote="An invaluable resource for professional development. The courses are top-notch."
         />
         <Testimonial
-          name="Johnson Brown"
+          name="Johnson Ochieng"
           imageSrc="./st3.jpeg"
           quote="I love the interactive learning approach. It's engaging and effective."
         />

@@ -24,32 +24,32 @@ export const columns: ColumnDef<Course>[] = [
       );
     },
   },
-  {
-    accessorKey: "price",
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        >
-          Price
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
-      );
-    },
-    cell: ({ row }) => {
-      const price = parseFloat(row.getValue("price"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "Ksh",
-      }).format(price);
+  // {
+  //   accessorKey: "price",
+  //   header: ({ column }) => {
+  //     return (
+  //       <Button
+  //         variant="ghost"
+  //         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+  //       >
+  //         Price
+  //         <ArrowUpDown className="ml-2 h-4 w-4" />
+  //       </Button>
+  //     );
+  //   },
+  //   cell: ({ row }) => {
+  //     const price = parseFloat(row.getValue("price"));
+  //     const formatted = new Intl.NumberFormat("en-US", {
+  //       style: "currency",
+  //       currency: "Ksh",
+  //     }).format(price);
 
-      return <div>{formatted}</div>;
-    },
-  },
+  //     return <div>{formatted}</div>;
+  //   },
+  // },
   {
     accessorKey: "isPublished",
-    header: "Status",
+    header: "Course Status",
     cell: ({ row }) => {
       const isPublished = row.getValue("isPublished") || false;
 
@@ -59,7 +59,7 @@ export const columns: ColumnDef<Course>[] = [
             isPublished && "bg-shujaa text-black hover:bg-shujaa-dark"
           }`}
         >
-          {isPublished ? "Published" : "Draft"}
+          {isPublished ? "Published" : "Pending"}
         </Badge>
       );
     },
@@ -71,7 +71,7 @@ export const columns: ColumnDef<Course>[] = [
         href={`/instructor/courses/${row.original.id}/basic`}
         className="flex gap-2 items-center hover:text-shujaa"
       >
-        <Pencil className="h-4 w-4" /> Edit
+        <Pencil className="h-4 w-4" /> Update
       </Link>
     ),
   },

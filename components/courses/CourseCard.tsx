@@ -59,7 +59,7 @@ const CourseCard = async ({ course }: { course: Course }) => {
           )}
         </div>
 
-        <p className="text-sm font-bold">$ {course.price}</p>
+        {/* <p className="text-sm font-bold">$ {course.price}</p> */}
       </div>
     </Link>
   );

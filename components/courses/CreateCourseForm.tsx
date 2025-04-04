@@ -71,11 +71,9 @@ const CreateCourseForm = ({ categories }: CreateCourseFormProps) => {
   return (
     <div className="p-10">
       <h1 className="text-xl font-bold">
-        Let give some basics for your course
-      </h1>
+      Start with the basics for your course.      </h1>
       <p className="text-sm mt-3">
-        It is ok if you cannot think of a good title or correct category now.
-        You can change them later.
+      It’s totally fine if you’re unsure about the title or category now—you can change them anytime.
       </p>
 
       <Form {...form}>
@@ -91,7 +89,7 @@ const CreateCourseForm = ({ categories }: CreateCourseFormProps) => {
                 <FormLabel>Title</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Ex: Web Development for Beginners"
+                    placeholder="Ex: Mastering AI Basics"
                     {...field}
                   />
                 </FormControl>
